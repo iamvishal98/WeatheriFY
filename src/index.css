@@ -1,13 +1,87 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bold {
+  font-weight: bold;
+}
+
+.App{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: beige;
+  overflow: auto;
+
+}
+
+.search {
+  text-align: center;
+}
+
+input {
+  border-radius: 0 0 20px 20px;
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: rgba(255,255,255,0.7);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.container {
+  width:auto;
+  position: relative;
+  height: 90%;
+  top:5%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+ .top {
+  width: 100%;
+  margin: 1rem auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.location {
+  font-size: medium;
+}
+
+.description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 10px;
 }
